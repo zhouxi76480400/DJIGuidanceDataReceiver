@@ -30,7 +30,13 @@ elseif(TARGET_ARCH MATCHES "arm")
     endif ()
 endif ()
 
-add_executable(DJIGuidanceDataReceiver main.cpp)
+add_executable(DJIGuidanceDataReceiver
+        main.cpp
+        serial/serial.h
+        serial/serial.cpp
+        GuidanceReceiver.cpp
+        GuidanceReceiver.h
+        )
 
 target_link_libraries(DJIGuidanceDataReceiver
         ${CMAKE_SOURCE_DIR}/libs/${LIB_PATH}/libDJI_guidance.so

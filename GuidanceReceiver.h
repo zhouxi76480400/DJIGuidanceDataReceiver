@@ -1,0 +1,11 @@
+//
+// Created by zhouxi on 18-11-9.
+//
+
+#ifndef DJIGUIDANCEDATARECEIVER_GUIDANCERECEIVER_H
+#define DJIGUIDANCEDATARECEIVER_GUIDANCERECEIVER_H
+
+
+void connect_to_guidance(const char * port);
+
+#endif //DJIGUIDANCEDATARECEIVER_GUIDANCERECEIVER_H

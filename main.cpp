@@ -2,6 +2,7 @@
 #include <string>
 #include <unistd.h>
 #include "DJI_guidance.h"
+#include "GuidanceReceiver.h"
 
 using namespace std;
 
@@ -13,6 +14,12 @@ int main(int argc, char ** argv) {
         string arg1 = string(argv[1]);
         if(str_is_full_equal(arg1,"-p") ||
             str_is_full_equal(arg1,"--port")) {
+            // set guidance
+            connect_to_guidance("/dev/ttyUSB0");
+            
+
+
+
 
 
             while (true) {
